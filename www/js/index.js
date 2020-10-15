@@ -40,15 +40,6 @@ function onCameraOpen(){
             url:"tcp://test.mosquitto.org", //a public broker used for testing purposes only. Try using a self hosted broker for production.
             port:"1883"
         });
-        
-
-
-    // setTimeout(function() {
-    //     cordova.plugins.CordovaMqTTPlugin.publish({
-    //         topic:"MQTT",
-    //         payload:"Hello from the cordova app!"
-    //     });
-    // }, delayInMilliseconds)
 
     navigator.camera.getPicture(onSuccess,onFail, { quality: 50, 
         destinationType: Camera.DestinationType.FILE_URI});
